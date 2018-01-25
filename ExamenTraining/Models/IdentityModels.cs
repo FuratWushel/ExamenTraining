@@ -29,5 +29,9 @@ namespace ExamenTraining.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ExamenTraining.Models.Product> Products { get; set; }
+
+        public System.Data.Entity.DbSet<ExamenTraining.Models.Category> Categories { get; set; }
     }
 }
