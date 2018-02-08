@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Image)
+            @Html.DisplayNameFor(model => model.ProductPicture.Filename)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -29,7 +29,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Image)
+            @Html.DisplayFor(modelItem => item.ProductPicture.Filename)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Name)
